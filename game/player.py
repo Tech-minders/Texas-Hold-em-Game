@@ -43,7 +43,7 @@ class Player():
             
             else:
                 print(f"enter a number as valid amount between 1 and {self.amount}")
-        def call_fold_raise(self,player):
+    def call_fold_raise(self,player):
             choice=input("Press 1 to call \nPress 2 fold  \nPress 3 to raise ")
             if choice =='1':
                 return self.call(player)
@@ -51,7 +51,7 @@ class Player():
                 return self.fold(player)
             if choice=='3':
                 return self.raise_stake(player)
-            print(f"wrong choise {choice}. choose 1 to 3")
+            print(f"wrong choice {choice}. choose 1 to 3")
             self.call_fold_raise(player)
     
     def call(self,player):
