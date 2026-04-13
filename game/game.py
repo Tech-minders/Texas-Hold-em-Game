@@ -16,12 +16,12 @@ class Game():
         #Prediction Engine Draw
         self.human=Player(type="human",
                             cards=human_cards,
-                            total_amount_bet=0,
+                            bet=0,
                             name="John",amount=2000)
 
         self.pc=Player(type="pc",
                             cards=pc_card,
-                            total_amount_bet=0,
+                            bet=0,
                             name="John",amount=2000)
         self._turn=self.human
         self.deck=deck
